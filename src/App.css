@@ -1,0 +1,26 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.customer-list{
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  overflow-y: scroll;
+}
+
+.main-detail-container{
+  height: 95vh;
+  overflow-y: scroll;
+  background-color: rgb(226, 225, 225);
+}
+
+main{
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  padding: 1rem;
+}
+
