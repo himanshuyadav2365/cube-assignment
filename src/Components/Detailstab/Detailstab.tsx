@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import './deatail.css'
 import { useSelector } from 'react-redux';
 import { getSelectedCustomer } from '../../reduxStore/slices/customerSlice';
@@ -19,7 +19,7 @@ const Detailstab = () => {
 
   useEffect(() => {
     generateRandomNumbers();
-    const intervalId = setInterval(generateRandomNumbers, 5000); 
+    const intervalId = setInterval(generateRandomNumbers, 10000); 
     return ()=> clearInterval(intervalId);
   }, [id]);
   

@@ -1,4 +1,4 @@
-import  { useState } from 'react'
+// import  { useState } from 'react'
 import Customertab from '../Customertab/Customertab'
 import { useSelector } from 'react-redux'
 import { data } from '../../Data/data'
@@ -6,7 +6,7 @@ import { getSelectedCustomer } from '../../reduxStore/slices/customerSlice'
 
 const SideBar = () => {
 
-  const [allCustomers,setAllCustomer]=useState([...data])
+  const allCustomers=data
   const {id:selectedId}=useSelector(getSelectedCustomer)
 
   return (
